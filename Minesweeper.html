@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Minesweeper.css">
+</head>
+
+<body onload="initGame()">
+
+    <h1> 💥 minesweeper<span class="flagTop">🚩</span></h1>
+
+    <div class="levels">
+        <span><button class="4 2 easy" onclick="chooseLevel(this)">Easy</button></span>
+        <span><button class="6 5 hard" onclick="chooseLevel(this)">Hard</button></span>
+        <span><button class="8 15 expert" onclick="chooseLevel(this)">Expert</button></span>
+    </div>
+
+    <div class="resHint">
+        <button class="reset" onclick="initGame()">😀</button>
+
+        <button class="hint" onclick="getHint()">Hint: 3</button>
+    </div>
+
+
+    <div class="gameFrame">
+        <div class="thead">
+            <div class="flagscount"></div>
+            <div class="time"></div>
+            <div class="board-container">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
