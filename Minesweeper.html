@@ -2,33 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/Minesweeper.css">
 </head>
 
 <body onload="initGame()">
     <h1> 💥 minesweeper<span class="flagTop">🚩</span></h1>
-    <div class="levels">
-        <span><button class="4 2 easy" onclick="chooseLevel(3)">Easy</button></span>
-        <span><button class="6 5 hard" onclick="chooseLevel(4)">Hard</button></span>
-        <span><button class="8 15 expert" onclick="chooseLevel(5)">Expert</button></span>
-    </div>
-    <div class="resHint">
-        <button class="reset" onclick="initGame()">😀</button>
-        <button class="hint" onclick="getHint()">Hint: 3</button>
-    </div>
-    
-    <div class ="parent-display">
-        <div class="board-container gameFrame">
-            <div class="flagscount"></div>
+
+    <div class="timerDisplay">
+        00 : 00 : 00 : 000
+
+        <div class="levels">
+            <span><button class="4 2 easy" onclick="chooseLevel(3)">Easy</button></span>
+            <span><button class="6 5 hard" onclick="chooseLevel(4)">Hard</button></span>
+            <span><button class="8 15 expert" onclick="chooseLevel(5)">Expert</button></span>
         </div>
-        <div class="timerModal"></div>
+
+
+
+
+        <div class="resHint">
+            <button class="reset" onclick="initGame()">😀</button>
+            <button class="hint" onclick="getHint()">Hint: 3</button>
+        </div>
+
+
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+
+
+        <div hidden class="popup">
+            <h2>Seat: <span>X-X</span></h2>
+            <h3>Price: <span>$X</span></h3>
+            <h4>Seats around: <span></span></h4>
+            <button data-i="" data-j="">PLAY AGAIN</button>
+        </div>
+
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/util.js"></script>
+    <h4 id="time" class="time"></h4>
+
+
+    
+    <div class="gameFrame"></div>
+    
+    
+        <div class="parent-display"></div>
+        <div class="flagscount"></div>
+        <div class="timerModal"></div>
+        
+            <script src="js/main.js"></script>
+            <script src="js/util.js"></script>
 </body>
 
 </html>

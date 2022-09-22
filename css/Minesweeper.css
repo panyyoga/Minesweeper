@@ -10,6 +10,13 @@ h1 {
     margin: 0 auto;
 }
 
+h4 {
+    margin-left: 460px;
+    font-family: 'comic sans MS', Courier, monospace;
+    margin: 0 auto;
+    padding: 0px;
+}
+
 .levels {
     border: 3px solid black;
     background-color: #ffffff;
@@ -23,37 +30,40 @@ h1 {
     display: flex;
 }
 .timerModal{
+    position: relative;
     display: none;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
     border: 3px solid red;
     height: 70px;
-    width: 800px;
+    width: 90px;
+    transition: all;
 
 }
 
-.gameFrame{
-    margin-top: 20px;
-    background-color: #ffffff;
-    height: 388px;
-    width: 340px;
-    border: 3px solid peru    
-}
+/* .timerModal:hover{
+    display: none;
+    margin-top: 30px;
+    margin-left: 90px;
+    border: 3px solid orange;
+    height: 70px;
+    width: 90px;
 
+} */
 
-table, th, td {
-    border: 3px solid #777;
-  }
 
 table{
+    border: 3px solid #777;
     background-color: #96D4D4;
     background-color: #39F;
 }
 
-.cell{
+.divcell button{
+    font-size: 15px;
     height: 40px;
-    width: 76px;
-    border: 4px solid white;
-    border-collapse: collapse;
+    width: 50px;
+    border: 3px solid white;
+    /* border-collapse: collapse; */
 }
 
 .flagTop{
@@ -63,3 +73,29 @@ table{
 }
 
 
+.popup {
+    background-color: orange;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+.time{
+    text-align: left;
+    background-color: red;
+
+}
+
+.second-position-timer{    
+    text-align: center;
+    border: 3px solid black;
+    opacity: 25%;
+    border-radius: 25px;
+    
+}
+
+.cez{
+    border:3px solid red;
+    background-color: peru;
+}
