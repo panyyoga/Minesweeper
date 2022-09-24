@@ -53,18 +53,38 @@ h4 {
 
 
 table{
-    border: 3px solid #777;
-    background-color: #96D4D4;
+    border: 3px solid peru;
     background-color: #39F;
+    background-color: #b792c0;
 }
 
-.divcell button{
+
+
+
+
+
+.cell{
     font-size: 15px;
     height: 40px;
     width: 50px;
     border: 3px solid white;
     /* border-collapse: collapse; */
 }
+
+
+.cell2{
+    font-size: 15px;
+    height: 40px;
+    width: 50px;
+    border: 3px solid white;
+    /* border-collapse: collapse; */
+} 
+
+
+.shown{
+background-color: #faea70;
+}
+
 
 .flagTop{
     position: absolute;
@@ -73,13 +93,13 @@ table{
 }
 
 
-.popup {
+/* .popup {
     background-color: orange;
     padding: 20px;
     position: absolute;
     right: 0px;
     top: 20px;
-}
+} */
 
 .time{
     text-align: left;
@@ -95,7 +115,42 @@ table{
     
 }
 
-.cez{
-    border:3px solid red;
-    background-color: peru;
+
+
+/* .new{
+background-color: red;
+    
+}
+
+.off{
+    height: 20px;
+    width: 20px;
+    border: red solid 3px;
+} */
+
+.FFLLAAGG{
+    height: 20px;
+    width: 20px;
+    border-radius: 20%;
+    background-color: rgb(133, 4, 4);
+}
+
+.FFLLAAGG {
+    height: 5px;
+    width: 3px;
+    border-radius: 88%;
+    background-color: rgb(133, 4, 4);
+    margin: left;
+    margin-left: 25px;
+    border: 3px solid black;
+
+}
+
+.cellClassList{
+
+    height: 20px;
+    width: 200px;
+    border-radius: 80%;
+    background-color: rgb(133, 4, 4);
+
 }
